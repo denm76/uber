@@ -1,0 +1,29 @@
+*{
+	font-family: Roboto,'sans-serif';
+}
+
+nav{
+	height: 51px;
+	background-color: #212121;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	padding: 13px 70px;
+	margin: 0;
+	list-style: none;
+}
+
+.menu .menu_link{
+	color: #ffffff;
+	font-family: Roboto;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.menu .menu_item{
+	border-right: 2px dotted #0B0B0B;
+	padding-right: 28px;
+}
