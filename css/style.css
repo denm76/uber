@@ -1,58 +1,62 @@
-*{
+@charset "UTF-8";
+* {
   font-family: 'Roboto', sans-serif;
 }
 
-header{
+header {
   position: relative;
 }
 
-nav{
+nav {
   position: fixed;
   width: 100%;
   height: 50px;
   background-color: #212121;
 }
 
-.menu{
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 13px 70px;
   margin: 0;
   list-style-type: none;
 }
 
-.menu .menu_link{
+.menu .menu_link {
   font-size: 15px;
   font-weight: 300;
   color: #ffffff;
   text-decoration: none;
 }
 
-.menu .menu_item{
-  border-right:2px dotted #614747 ;
+.menu .menu_item {
+  border-right: 2px dotted #614747;
   padding-right: 28px;
 }
 
-.menu .menu_item:last-child{
-  border-right:none;
+.menu .menu_item:last-child {
+  border-right: none;
 }
 
-.subheader{
-  position:absolute;
+.subheader {
+  position: absolute;
   top: 50px;
   width: 100%;
   height: 84px;
-  background-color: rgba(0,0,0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* устанавливаем логотипу максимальную ширину 100% от колонки на случай смены логотипа */
-.subheader .subheader_logo{
+.subheader .subheader_logo {
   display: block;
   margin-top: 16px;
   max-width: 100%;
 }
 
-.subheader .subheader_official{
+.subheader .subheader_official {
   opacity: 0.5;
   margin-top: 6px;
   font-size: 13px;
@@ -60,7 +64,7 @@ nav{
   color: #ffffff;
 }
 
-.subheader .subheader_call{
+.subheader .subheader_call {
   margin-top: 19px;
   font-size: 12px;
   font-weight: 300;
@@ -68,7 +72,7 @@ nav{
   text-align: right;
 }
 
-.subheader .subheader_phone{
+.subheader .subheader_phone {
   display: block;
   margin-top: 8px;
   font-size: 22px;
@@ -80,28 +84,31 @@ nav{
   line-height: 18px;
 }
 
-.subheader .subheader_btn{
+.subheader .subheader_btn {
   margin-top: 19px;
   width: 172px;
   height: 46px;
-  background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+  background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
   border: none;
   border-radius: 4px;
-  box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.11);
+  -webkit-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.11);
+          box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.11);
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
   color: #ffffff;
 }
 
-.promo{
+/* устанавливаем логотипу максимальную ширину 100% от колонки на случай смены логотипа */
+.promo {
   min-height: 800px;
-  background: url('../img/bg/uber_bg.png') center center/cover no-repeat;
+  background: url("../img/bg/uber_bg.png") center center/cover no-repeat;
   padding: 150px 0 135px 0;
 }
 
-.promo .promo_header{
+.promo .promo_header {
   margin: 0;
   font-size: 60px;
   font-weight: 700;
@@ -111,7 +118,7 @@ nav{
   line-height: 60px;
 }
 
-.promo .promo_subheader{
+.promo .promo_subheader {
   margin: 0;
   margin-top: 22px;
   font-size: 36px;
@@ -121,7 +128,7 @@ nav{
   line-height: 36px;
 }
 
-.promo .promo_descr{
+.promo .promo_descr {
   margin-top: 23px;
   font-size: 18px;
   font-weight: 400;
@@ -130,29 +137,34 @@ nav{
   line-height: 24px;
 }
 
-.promo .promo_btn{
+.promo .promo_btn {
   display: block;
   margin: 0 auto;
   margin-top: 115px;
   width: 265px;
   height: 69px;
-  background-image: linear-gradient(0.0deg, #1eacc7 0%, #4ce2ff 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+  background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
   border: none;
   border-radius: 4px;
-  box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.11);
+  -webkit-box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.11);
+          box-shadow: inset 0px -4px 0px 0px rgba(0, 0, 0, 0.11);
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
   color: #ffffff;
 }
 
-.benefits{
+.benefits {
   padding: 20px 43px 67px 33px;
 }
 
-.benefits .benefits_header{
+.label {
+  position: relative;
   margin: 0 auto;
+  margin-top: 70px;
+  text-align: center;
   width: 112px;
   height: 24px;
   background-color: #000000;
@@ -161,9 +173,16 @@ nav{
   text-transform: uppercase;
   color: #ffffff;
   padding: 5px 12px;
+  z-index: 2;
 }
 
-.benefits .benefits_subheader{
+.label_white {
+  background-color: #ffffff;
+  color: #070716;
+}
+
+.title {
+  position: relative;
   margin-bottom: 0;
   margin-top: 33px;
   font-size: 38px;
@@ -171,19 +190,51 @@ nav{
   text-transform: uppercase;
   color: #222222;
   text-align: center;
+  z-index: 2;
 }
 
-.benefits .benefits_card{
+.title_white {
+  color: #ffffff;
+}
+
+.subtitle {
+  position: relative;
+  margin-top: 19px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #222222;
+  z-index: 2;
+}
+
+.subtitle_white {
+  color: #ffffff;
+}
+
+.benefits .benefits_card {
   margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.benefits .benefits_card .benefits_img{
+.benefits .benefits_card .benefits_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 25px;
   width: 113px;
   height: 113px;
@@ -191,21 +242,128 @@ nav{
   border-radius: 50%;
 }
 
-.benefits .benefits_card .benefits_descr{
+.benefits .benefits_card .benefits_descr {
   width: 343px;
 }
 
-.benefits .benefits_card .benefits_descr .benefits_subtitle{
+.benefits .benefits_card .benefits_descr .benefits_subtitle {
   font-size: 15px;
   font-weight: 300;
   color: #202020;
   line-height: 21px;
 }
 
-.benefits .benefits_card .benefits_descr .benefits_title{
+.benefits .benefits_card .benefits_descr .benefits_title {
   text-align: left;
   font-size: 17px;
   font-weight: 400;
   color: #1eacc7;
 }
 
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/bg/mobile_bg.png") center center/cover no-repeat;
+}
+
+.mobile .row {
+  margin-top: 32px;
+}
+
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+.mobile_item_1 {
+  background: url("../img/others/cards/card1.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_2 {
+  background: url("../img/others/cards/card2.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_3 {
+  background: url("../img/others/cards/card3.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_4 {
+  background: url("../img/others/cards/card4.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_5 {
+  background: url("../img/others/cards/card5.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_6 {
+  background: url("../img/others/cards/card6.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_subtitle {
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.mobile_item_plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  text-align: center;
+  border-radius: 50%;
+  bottom: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.choice {
+  position: relative;
+  max-height: 896px;
+  background: url("../img/bg/mobile_bg.png") center center/cover no-repeat;
+  padding: 57px 0 138px 0;
+}
+
+.choice .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 499px;
+  background-color: #070716;
+  z-index: 1;
+}
+
+.choice_img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+}
+
+.choice_descr {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #222222;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
