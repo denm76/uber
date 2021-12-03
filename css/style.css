@@ -360,6 +360,7 @@ nav {
 }
 
 .choice_descr {
+  margin: 0 auto;
   font-size: 17px;
   line-height: 24px;
   font-weight: 300;
