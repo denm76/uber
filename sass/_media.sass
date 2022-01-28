@@ -61,6 +61,8 @@
       width: 225px
 
 @media(max-width: 776px)
+  .title
+    margin-top: 25px
   .menu
     position: fixed
     flex-direction: column
@@ -71,7 +73,7 @@
     width: 50%
     height: 100vh
     padding: 20px 15px
-    background-color: rgba(0,0,0,.8)
+    background-color: rgba(0,0,0, .8)
     transition: 0.6s all
     &_active
       left: 0
@@ -124,8 +126,8 @@
       display: block
       margin: 0 auto
     .promo
-    &_header
-      line-height: 45px
+      &_header
+        line-height: 45px
 
 @media(max-width: 575px)
   nav
@@ -149,6 +151,8 @@
       height: 22px
       font-size: 10px
       margin-top: 6px
+      &:hover
+				background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
   .promo
     min-height: 400px
     padding: 93px 0 35px 0
@@ -165,8 +169,16 @@
       line-height: 30px
     &_btn
       margin-top: 72px
+      &:hover
+				background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
   .menu
     width: 85%
+    &_item
+      width: 100%
+      text-align: center
+      padding: 5px 0
+    &_link
+      display: block
   .benefits
     padding: 22px 0 36px 0
     &_card

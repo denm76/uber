@@ -620,6 +620,10 @@ footer a:hover {
   text-align: center;
 }
 
+.xs-visible {
+  display: none;
+}
+
 @media (max-width: 1200px) {
   .menu_item {
     padding-right: 19px;
@@ -702,6 +706,9 @@ footer a:hover {
 }
 
 @media (max-width: 776px) {
+  .title {
+    margin-top: 25px;
+  }
   .menu {
     position: fixed;
     -webkit-box-orient: vertical;
@@ -788,7 +795,7 @@ footer a:hover {
     display: block;
     margin: 0 auto;
   }
-  .subheader_header {
+  .subheader .promo_header {
     line-height: 45px;
   }
 }
@@ -803,6 +810,8 @@ footer a:hover {
   .subheader {
     top: 30px;
     height: 60px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
   }
   .subheader_official {
     display: none;
@@ -825,6 +834,8 @@ footer a:hover {
   .promo {
     min-height: 400px;
     padding: 93px 0 35px 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
   }
   .promo_descr {
     display: none;
@@ -845,6 +856,14 @@ footer a:hover {
   }
   .menu {
     width: 85%;
+  }
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .menu_link {
+    display: block;
   }
   .benefits {
     padding: 22px 0 36px 0;
